@@ -6,7 +6,8 @@
         { "include": "#multiLineComment" },
         { "include": "#importDirective" },
         { "include": "#openDirective" },
-        { "include": "#namespaceDefinition" }
+        { "include": "#namespaceDefinition" },
+        { "include": "#exportDirective" }
     ],
     "repository": {
         "importDirective": {
@@ -93,6 +94,11 @@
                     ]
                 }
             ]
+        },
+        "exportDirective": {
+            "comment": "export for namespaces and functions",
+            "name": "keyword.other.export.act",
+            "match": "\\bexport\\b"
         }
     },
     "scopeName": "source.act"
